@@ -34,6 +34,19 @@ public class Main {
 				System.out.println(car.toString());
 			}
 
+//			output:
+			/*
+			Car{year=2000, brand='opel'}
+
+			2
+			Car{year=2000, brand='opel'}
+			Car{year=2005, brand='mazda'}
+
+			2
+			Car{year=2000, brand='opel'}
+			Car{year=2005, brand='mazda'}
+			*/
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
