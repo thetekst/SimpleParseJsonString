@@ -48,7 +48,11 @@ public class Main {
 			*/
 
 		} catch (IOException e) {
-			e.printStackTrace();
+			try {
+				throw new IOException("Error parsing JSON request string");
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
 		}
 	}
 }
